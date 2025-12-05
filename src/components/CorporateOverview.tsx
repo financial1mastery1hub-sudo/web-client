@@ -52,3 +52,5 @@ export default function CorporateOverview() {
       </div>
     </section>
   );
+
+}
