@@ -24,7 +24,7 @@ export default function CorporateOverview() {
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-xl flex items-center justify-center flex-shrink-0">
                   <Eye className="w-7 h-7 text-white" />
-                </div>
+                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-3">Our Vision</h3>
                   <p className="text-[#F5E6A3] leading-relaxed">
