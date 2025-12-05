@@ -22,9 +22,9 @@ export default function GlobalPresence() {
     diffuse: 3,
     mapSamples: 16000,
     mapBrightness: 3,
-    baseColor: [0.004, 0.129, 0.224],
-    markerColor: [0 / 255, 179 / 255, 174 / 255],
-    glowColor: [0.004, 0.129, 0.224],
+    baseColor: [0.165, 0.122, 0.039],
+    markerColor: [255 / 255, 215 / 255, 0 / 255],
+    glowColor: [0.165, 0.122, 0.039],
     markers: locations.map(loc => ({
       location: loc.coordinates,
       size: loc.status === 'Headquarters' ? 0.12 : 0.08
@@ -32,27 +32,27 @@ export default function GlobalPresence() {
   };
 
   return (
-    <section id="presence" className="relative py-20 bg-gradient-to-b from-[#041524] to-[#062336]">
+    <section id="presence" className="relative py-20 bg-gradient-to-b from-[#2A1F0A] to-[#3D2F15]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Global Presence
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-[#D4AF37] text-lg max-w-2xl mx-auto">
             Operating across Africa and the Middle East, bringing world-class energy solutions to emerging markets.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-gradient-to-br from-[#041524] to-[#062336]">
+          <div className="relative h-[500px] rounded-2xl overflow-hidden border border-[#FFD700]/20 shadow-xl bg-gradient-to-br from-[#2A1F0A] to-[#3D2F15]">
             <div className="absolute inset-0 flex items-center justify-center">
               <Globe config={globeConfig} className="top-0" />
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#041524] to-transparent z-10">
+            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#2A1F0A] to-transparent z-10">
               <div className="flex items-center justify-center gap-2">
-                <MapPin className="w-5 h-5 text-[#00B3AE]" />
-                <p className="text-gray-300 font-semibold">Serving Africa & Middle East</p>
+                <MapPin className="w-5 h-5 text-[#FFD700]" />
+                <p className="text-[#F5E6A3] font-semibold">Serving Africa & Middle East</p>
               </div>
             </div>
           </div>
@@ -61,19 +61,19 @@ export default function GlobalPresence() {
             {locations.map((location, index) => (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-white/5 to-transparent backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-[#00B3AE]/50 transition-all duration-300"
+                className="group bg-gradient-to-br from-[#FFD700]/10 to-transparent backdrop-blur-sm border border-[#FFD700]/20 rounded-xl p-6 hover:border-[#FFD700]/50 transition-all duration-300"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#00B3AE] to-[#00767A] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-white font-semibold text-lg">{location.name}</h3>
-                      <p className="text-gray-400 text-sm">{location.country}</p>
+                      <p className="text-[#D4AF37] text-sm">{location.country}</p>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-[#00B3AE] bg-[#00B3AE]/10 px-3 py-1 rounded-full">
+                  <span className="text-xs font-semibold text-[#FFD700] bg-[#FFD700]/10 px-3 py-1 rounded-full">
                     {location.status}
                   </span>
                 </div>

@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#041524]">
+    <div className="min-h-screen bg-[#2A1F0A]">
       <Header />
       <HeroOdyssey />
       <PillarCards />
