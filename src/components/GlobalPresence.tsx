@@ -44,7 +44,6 @@ export default function GlobalPresence() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[500px] rounded-2xl overflow-hidden border border-[#FFD700]/20 shadow-xl bg-gradient-to-br from-black to-[#1a1a00]">
           <div className="relative h-[500px] rounded-2xl overflow-hidden border border-[#FFD700]/30 shadow-xl bg-gradient-to-br from-[#FFD700]/10 via-black to-[#FFA500]/10">
             <div className="absolute inset-0 flex items-center justify-center">
               <Globe config={globeConfig} className="top-0" />
@@ -56,6 +55,8 @@ export default function GlobalPresence() {
                 <p className="text-[#F5E6A3] font-semibold">Serving Africa & Middle East</p>
               </div>
             </div>
+          </div>
+        </div>
           </div>
 
           <div className="space-y-4">
