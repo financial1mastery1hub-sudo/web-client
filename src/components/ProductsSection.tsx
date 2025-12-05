@@ -41,7 +41,7 @@ export default function ProductsSection() {
   ];
 
   return (
-    <section id="solutions" className="relative py-20 bg-gradient-to-b from-[#3D2F15] to-[#2A1F0A]">
+    <section id="solutions" className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -74,7 +74,7 @@ export default function ProductsSection() {
                     alt={product.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#2A1F0A] to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
                 </div>
 
                 <div className="p-8">

@@ -226,7 +226,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ name, value, position, icon: 
           </div>
           <div className="absolute -inset-1 bg-[#FFD700]/30 rounded-xl blur-sm opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-        <div className="text-white relative backdrop-blur-sm bg-[#041524]/50 px-4 py-2 rounded-lg border border-white/10">
+        <div className="text-white relative backdrop-blur-sm bg-black/50 px-4 py-2 rounded-lg border border-white/10">
           <div className="font-semibold text-sm group-hover:text-[#FFD700] transition-colors duration-300">{name}</div>
           <div className="text-gray-300 text-xs group-hover:text-white transition-colors duration-300">{value}</div>
           <div className="absolute -inset-2 bg-[#FFD700]/10 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
@@ -346,7 +346,7 @@ export const HeroOdyssey: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full bg-[#041524] text-white overflow-hidden min-h-screen">
+    <div className="relative w-full bg-gradient-to-b from-black via-[#1a1a00] to-black text-white overflow-hidden min-h-screen">
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 min-h-screen flex flex-col">
         <motion.div
           variants={containerVariants}
@@ -466,7 +466,7 @@ export const HeroOdyssey: React.FC = () => {
         transition={{ duration: 1.5 }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#041524] via-[#1a1410] to-[#041524]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-[#1a1a00] to-black"></div>
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-b from-[#FFD700]/15 to-[#FFA500]/5 blur-3xl pointer-events-none"></div>
 

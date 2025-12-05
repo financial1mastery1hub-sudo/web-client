@@ -2,7 +2,7 @@ import { Target, Eye } from 'lucide-react';
 
 export default function CorporateOverview() {
   return (
-    <section id="about" className="relative py-20 bg-gradient-to-b from-[#3D2F15] to-[#2A1F0A]">
+    <section id="about" className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8">

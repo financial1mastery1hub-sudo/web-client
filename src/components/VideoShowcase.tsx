@@ -5,7 +5,7 @@ export default function VideoShowcase() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-[#3D2F15] to-[#2A1F0A]">
+    <section className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -24,7 +24,7 @@ export default function VideoShowcase() {
                 alt="Industrial lubricant operations"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#2A1F0A] via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
               <button
                 onClick={() => setIsPlaying(true)}
@@ -49,7 +49,7 @@ export default function VideoShowcase() {
                 alt="Solar farm energy generation"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#2A1F0A] via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
               <button
                 onClick={() => setIsPlaying(true)}

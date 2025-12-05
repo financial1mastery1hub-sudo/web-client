@@ -32,7 +32,7 @@ export default function GlobalPresence() {
   };
 
   return (
-    <section id="presence" className="relative py-20 bg-gradient-to-b from-[#2A1F0A] to-[#3D2F15]">
+    <section id="presence" className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -44,12 +44,12 @@ export default function GlobalPresence() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[500px] rounded-2xl overflow-hidden border border-[#FFD700]/20 shadow-xl bg-gradient-to-br from-[#2A1F0A] to-[#3D2F15]">
+          <div className="relative h-[500px] rounded-2xl overflow-hidden border border-[#FFD700]/20 shadow-xl bg-gradient-to-br from-black to-[#1a1a00]">
             <div className="absolute inset-0 flex items-center justify-center">
               <Globe config={globeConfig} className="top-0" />
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#2A1F0A] to-transparent z-10">
+            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent z-10">
               <div className="flex items-center justify-center gap-2">
                 <MapPin className="w-5 h-5 text-[#FFD700]" />
                 <p className="text-[#F5E6A3] font-semibold">Serving Africa & Middle East</p>

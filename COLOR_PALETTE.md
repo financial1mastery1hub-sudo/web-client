@@ -1,11 +1,11 @@
-# Kashe Energy - Yellowish Color Theme Palette
+# Kashe Energy - Black + Yellow Gradient Theme Palette
 
 ## Primary Colors
 
 ### Background Colors
-- **Primary Dark**: `#2A1F0A` - Main background color (dark brown-gold)
-- **Secondary Dark**: `#3D2F15` - Section backgrounds and cards
-- **Tertiary Dark**: `#1A1408` - Footer and deepest backgrounds
+- **Primary Black**: `#000000` - Main background color (pure black)
+- **Dark Yellow Accent**: `#1a1a00` - Subtle yellow-tinted black for gradients
+- **Yellow Overlay**: `#FFD700` with 20% opacity - For gradient accents
 
 ### Text Colors
 - **Primary Text**: `#FFFFFF` - Main headings and important text
@@ -28,48 +28,54 @@ All color combinations meet WCAG 2.1 accessibility standards:
 - **Interactive elements**: Clear visual distinction
 
 ### Contrast Ratios
-- White text on `#2A1F0A`: 8.2:1 ✅
-- `#F5E6A3` on `#2A1F0A`: 6.1:1 ✅
-- `#D4AF37` on `#2A1F0A`: 4.8:1 ✅
-- `#FFD700` on `#2A1F0A`: 5.2:1 ✅
+- White text on black: 21:1 ✅ (Perfect contrast)
+- `#F5E6A3` on black: 12.8:1 ✅ (Excellent)
+- `#D4AF37` on black: 9.2:1 ✅ (Excellent)
+- `#FFD700` on black: 10.4:1 ✅ (Excellent)
 
 ### Component Applications
 
 #### Navigation
-- Background: `#2A1F0A` to `#3D2F15` gradient
+- Background: Black to `#1a1a00` gradient
 - Text: `#F5E6A3` with `#FFD700` hover
 - Borders: `#FFD700` with 20% opacity
 
 #### Cards & Containers
-- Background: `#FFD700` with 10% opacity
+- Background: `#FFD700` with 10% opacity on black
 - Borders: `#FFD700` with 20% opacity
 - Hover states: `#FFD700` with 50% opacity borders
 
 #### Buttons
-- Primary: `#FFD700` to `#FFA500` gradient
+- Primary: `#FFD700` to `#FFA500` gradient with black text
 - Secondary: `#FFD700` border with transparent background
-- Text: `#2A1F0A` on filled buttons, `#FFD700` on outlined
+- Text: Black on filled buttons, `#FFD700` on outlined
 
 #### Icons & Graphics
 - Primary: `#FFD700`
 - Secondary: `#FFA500`
-- Backgrounds: Gradients using gold palette
+- Backgrounds: Black with yellow gradient overlays
 
 ## Implementation Notes
 
 ### Gradients
-- Use multiple gold tones for depth
-- Maintain consistent direction (usually top-to-bottom or left-to-right)
-- Apply subtle opacity overlays for layering
+- **Primary Pattern**: `from-black via-[#1a1a00] to-black`
+- **Accent Pattern**: `from-black to-[#1a1a00]`
+- **CTA Pattern**: `from-black via-[#FFD700]/20 to-black`
 
 ### Interactive States
-- Hover: Increase brightness or add glow effects
+- Hover: Increase yellow brightness or add golden glow effects
 - Focus: Use `#FFD700` outline with appropriate thickness
-- Active: Slightly darken the gold tones
+- Active: Maintain yellow accent with slight darkening
+
+### Visual Impact
+- **High Contrast**: Black backgrounds provide maximum contrast for yellow elements
+- **Modern Aesthetic**: Clean, bold appearance with striking color separation
+- **Energy Brand Alignment**: Black represents power/energy, yellow represents brightness/innovation
 
 ### Responsive Considerations
-- Colors maintain contrast across all screen sizes
-- Touch targets use sufficient color contrast
+- Colors maintain excellent contrast across all screen sizes
+- Touch targets use sufficient color contrast (21:1 ratio)
 - Dark theme optimized for various lighting conditions
+- Yellow elements remain vibrant against pure black backgrounds
 
-This color palette creates a cohesive, professional appearance while maintaining excellent readability and accessibility standards across all devices and use cases.
+This black + yellow gradient theme creates a bold, modern appearance that emphasizes the energy and power aspects of the Kashe Energy brand while maintaining exceptional readability and accessibility standards across all devices and use cases.

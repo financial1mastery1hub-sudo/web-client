@@ -23,7 +23,7 @@ export default function PillarCards() {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-[#2A1F0A] to-[#3D2F15]">
+    <section className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
