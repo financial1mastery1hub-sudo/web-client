@@ -346,7 +346,7 @@ export const HeroOdyssey: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full bg-gradient-to-b from-black via-[#1a1a00] to-black text-white overflow-hidden min-h-screen">
+    <div className="relative w-full bg-gradient-to-br from-[#FFD700]/20 via-black via-[#FFA500]/15 to-black text-white overflow-hidden min-h-screen">
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 min-h-screen flex flex-col">
         <motion.div
           variants={containerVariants}
@@ -466,9 +466,9 @@ export const HeroOdyssey: React.FC = () => {
         transition={{ duration: 1.5 }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-[#1a1a00] to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/15 via-black via-[#FFA500]/10 to-black"></div>
 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-b from-[#FFD700]/15 to-[#FFA500]/5 blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#FFD700]/25 via-[#FFA500]/15 to-[#FFD700]/10 blur-3xl pointer-events-none"></div>
 
         <div className="absolute top-0 w-full left-1/2 transform -translate-x-1/2 h-full opacity-75">
           <Lightning

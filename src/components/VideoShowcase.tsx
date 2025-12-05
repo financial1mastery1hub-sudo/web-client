@@ -5,7 +5,7 @@ export default function VideoShowcase() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
+    <section className="relative py-20 bg-gradient-to-br from-[#FFA500]/10 via-black via-[#FFD700]/15 to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -69,7 +69,7 @@ export default function VideoShowcase() {
         </div>
 
         {isPlaying && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-black/90 via-[#FFD700]/10 to-black/90 backdrop-blur-sm">
             <div className="relative w-full max-w-4xl mx-auto px-6">
               <button
                 onClick={() => setIsPlaying(false)}

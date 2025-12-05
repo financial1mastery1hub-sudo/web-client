@@ -2,7 +2,7 @@ import { Target, Eye } from 'lucide-react';
 
 export default function CorporateOverview() {
   return (
-    <section id="about" className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
+    <section id="about" className="relative py-20 bg-gradient-to-br from-black via-[#FFD700]/18 via-black to-[#FFA500]/12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8">
@@ -21,6 +21,7 @@ export default function CorporateOverview() {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-br from-[#FFD700]/10 to-transparent backdrop-blur-sm border border-[#FFD700]/20 rounded-2xl p-8 hover:scale-105 transition-transform">
+            <div className="bg-gradient-to-br from-[#FFD700]/20 via-black/70 to-[#FFA500]/15 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl p-8 hover:scale-105 transition-transform">
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-xl flex items-center justify-center flex-shrink-0">
                   <Eye className="w-7 h-7 text-white" />
@@ -35,6 +36,7 @@ export default function CorporateOverview() {
             </div>
 
             <div className="bg-gradient-to-br from-[#FFA500]/10 to-transparent backdrop-blur-sm border border-[#FFA500]/20 rounded-2xl p-8 hover:scale-105 transition-transform">
+            <div className="bg-gradient-to-br from-[#FFA500]/20 via-black/70 to-[#FFD700]/15 backdrop-blur-sm border border-[#FFA500]/30 rounded-2xl p-8 hover:scale-105 transition-transform">
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14 bg-gradient-to-br from-[#FFA500] to-[#FF8C00] rounded-xl flex items-center justify-center flex-shrink-0">
                   <Target className="w-7 h-7 text-white" />

@@ -6,7 +6,7 @@ export default function Header() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-black via-[#1a1a00] to-black backdrop-blur-md border-b border-[#FFD700]/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#FFD700]/20 via-black to-[#FFA500]/20 backdrop-blur-md border-b border-[#FFD700]/30">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -30,7 +30,7 @@ export default function Header() {
               </button>
               {isSolutionsOpen && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-b from-black to-[#1a1a00] border border-[#FFD700]/20 rounded-xl shadow-xl p-4"
+                  className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-b from-[#FFD700]/10 via-black to-[#FFA500]/10 border border-[#FFD700]/30 rounded-xl shadow-xl p-4"
                   onMouseEnter={() => setIsSolutionsOpen(true)}
                   onMouseLeave={() => setIsSolutionsOpen(false)}
                 >
@@ -57,7 +57,7 @@ export default function Header() {
         </div>
 
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 space-y-3">
+          <div className="lg:hidden mt-4 pb-4 space-y-3 bg-gradient-to-b from-[#FFD700]/10 to-black/90 rounded-lg p-4 border border-[#FFD700]/20">
             <a href="#home" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Home</a>
             <a href="#solutions" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Solutions</a>
             <a href="#presence" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Global Presence</a>

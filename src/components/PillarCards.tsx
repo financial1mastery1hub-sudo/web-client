@@ -23,7 +23,7 @@ export default function PillarCards() {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
+    <section className="relative py-20 bg-gradient-to-br from-[#FFD700]/15 via-black via-[#FFA500]/10 to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -38,7 +38,7 @@ export default function PillarCards() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-br from-[#FFD700]/10 to-transparent backdrop-blur-sm border border-[#FFD700]/20 rounded-2xl p-8 hover:scale-105 transition-all duration-300"
+              className="group relative bg-gradient-to-br from-[#FFD700]/15 via-black/80 to-[#FFA500]/10 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl p-8 hover:scale-105 transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300"
                    style={{ backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))` }}></div>

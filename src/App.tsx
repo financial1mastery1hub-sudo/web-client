@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-gradient-to-br from-[#FFD700]/10 via-black via-[#FFA500]/8 to-black">
       <Header />
       <HeroOdyssey />
       <PillarCards />

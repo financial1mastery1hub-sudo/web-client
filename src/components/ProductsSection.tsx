@@ -41,7 +41,7 @@ export default function ProductsSection() {
   ];
 
   return (
-    <section id="solutions" className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
+    <section id="solutions" className="relative py-20 bg-gradient-to-br from-black via-[#FFD700]/20 via-black to-[#FFA500]/15">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -66,7 +66,7 @@ export default function ProductsSection() {
             return (
               <div
                 key={index}
-                className="group relative bg-gradient-to-br from-[#FFD700]/10 to-transparent backdrop-blur-sm border border-[#FFD700]/20 rounded-2xl overflow-hidden hover:border-[#FFD700]/50 transition-all duration-300"
+               className="group relative bg-gradient-to-br from-[#FFD700]/20 via-black/90 to-[#FFA500]/15 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl overflow-hidden hover:border-[#FFD700]/60 transition-all duration-300"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img

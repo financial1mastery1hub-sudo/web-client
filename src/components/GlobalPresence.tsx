@@ -32,7 +32,7 @@ export default function GlobalPresence() {
   };
 
   return (
-    <section id="presence" className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
+    <section id="presence" className="relative py-20 bg-gradient-to-br from-[#FFD700]/12 via-black via-[#FFA500]/8 to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -45,6 +45,7 @@ export default function GlobalPresence() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative h-[500px] rounded-2xl overflow-hidden border border-[#FFD700]/20 shadow-xl bg-gradient-to-br from-black to-[#1a1a00]">
+          <div className="relative h-[500px] rounded-2xl overflow-hidden border border-[#FFD700]/30 shadow-xl bg-gradient-to-br from-[#FFD700]/10 via-black to-[#FFA500]/10">
             <div className="absolute inset-0 flex items-center justify-center">
               <Globe config={globeConfig} className="top-0" />
             </div>
@@ -61,7 +62,7 @@ export default function GlobalPresence() {
             {locations.map((location, index) => (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-[#FFD700]/10 to-transparent backdrop-blur-sm border border-[#FFD700]/20 rounded-xl p-6 hover:border-[#FFD700]/50 transition-all duration-300"
+                className="group bg-gradient-to-br from-[#FFD700]/15 via-black/80 to-[#FFA500]/10 backdrop-blur-sm border border-[#FFD700]/30 rounded-xl p-6 hover:border-[#FFD700]/60 transition-all duration-300"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">

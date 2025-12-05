@@ -35,7 +35,7 @@ export default function Industries() {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-black via-[#1a1a00] to-black">
+    <section className="relative py-20 bg-gradient-to-br from-[#FFA500]/8 via-black via-[#FFD700]/12 to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -50,7 +50,7 @@ export default function Industries() {
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-[#FFD700]/10 to-transparent backdrop-blur-sm border border-[#FFD700]/20 rounded-2xl p-6 hover:border-[#FFD700]/50 transition-all duration-300"
+             className="group bg-gradient-to-br from-[#FFD700]/18 via-black/80 to-[#FFA500]/12 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl p-6 hover:border-[#FFD700]/60 transition-all duration-300"
             >
               <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <industry.icon className="w-6 h-6 text-white" />
