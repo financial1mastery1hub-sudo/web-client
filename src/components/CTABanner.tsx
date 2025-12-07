@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function CTABanner() {
   return (
-    <section id="contact" className="relative py-20 bg-gradient-to-br from-[#FFD700]/20 via-[#1a1a1a] via-[#FFA500]/15 to-[#0a0a0a]">
+    <section id="contact" className="relative py-20 bg-gradient-to-br from-[#FFD700]/20 via-black via-[#FFA500]/15 to-black">
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FFD700] rounded-full blur-[120px]"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#FFA500] rounded-full blur-[120px]"></div>

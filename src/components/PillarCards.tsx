@@ -48,7 +48,7 @@ export default function PillarCards() {
   };
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-[#FFD700]/12 via-[#1a1a1a] via-[#FFA500]/8 to-[#0a0a0a]">
+    <section className="relative py-20 bg-gradient-to-br from-[#FFD700]/12 via-black via-[#FFA500]/8 to-black">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -89,7 +89,7 @@ export default function PillarCards() {
               key={index}
               variants={cardVariants}
               whileHover={{ scale: 1.05, y: -10 }}
-              className="group relative bg-gradient-to-br from-[#FFD700]/12 via-[#1a1a1a]/90 to-[#FFA500]/8 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl p-8 transition-all duration-300"
+              className="group relative bg-gradient-to-br from-[#FFD700]/12 via-black/90 to-[#FFA500]/8 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl p-8 transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/20 to-[#FFA500]/15 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300"
                    style={{ backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))` }}></div>

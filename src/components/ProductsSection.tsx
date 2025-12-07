@@ -66,7 +66,7 @@ export default function ProductsSection() {
   };
 
   return (
-    <section id="solutions" className="relative py-20 bg-gradient-to-br from-[#0a0a0a] via-[#FFD700]/15 via-[#1a1a1a] to-[#FFA500]/10">
+    <section id="solutions" className="relative py-20 bg-gradient-to-br from-black via-[#FFD700]/15 via-black to-[#FFA500]/10">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -117,7 +117,7 @@ export default function ProductsSection() {
                 key={index}
                 variants={cardVariants}
                 whileHover={{ scale: 1.03, y: -5 }}
-                className="group relative bg-gradient-to-br from-[#FFD700]/15 via-[#1a1a1a]/95 to-[#FFA500]/12 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl overflow-hidden hover:border-[#FFD700]/60 transition-all duration-300"
+                className="group relative bg-gradient-to-br from-[#FFD700]/15 via-black/95 to-[#FFA500]/12 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl overflow-hidden hover:border-[#FFD700]/60 transition-all duration-300"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
@@ -125,7 +125,7 @@ export default function ProductsSection() {
                     alt={product.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
                 </div>
 
                 <div className="p-8">
