@@ -7,7 +7,7 @@ export default function CorporateOverview() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#F5E6A3] mb-6">
                 Corporate Overview
               </h2>
               <p className="text-[#F5E6A3] text-lg leading-relaxed mb-4">
@@ -26,7 +26,7 @@ export default function CorporateOverview() {
                   <Eye className="w-7 h-7 text-white" />
                  </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Our Vision</h3>
+                  <h3 className="text-2xl font-bold text-[#F5E6A3] mb-3">Our Vision</h3>
                   <p className="text-[#F5E6A3] leading-relaxed">
                     To be Africa's most trusted energy partner, delivering innovative solutions that power progress while protecting our planet for future generations.
                   </p>
@@ -40,7 +40,7 @@ export default function CorporateOverview() {
                   <Target className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Our Mission</h3>
+                  <h3 className="text-2xl font-bold text-[#F5E6A3] mb-3">Our Mission</h3>
                   <p className="text-[#F5E6A3] leading-relaxed">
                     To provide world-class lubricants and sustainable energy solutions that exceed customer expectations, support economic growth, and contribute to a cleaner environment.
                   </p>

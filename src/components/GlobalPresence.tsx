@@ -18,13 +18,13 @@ export default function GlobalPresence() {
     devicePixelRatio: 2,
     phi: 0,
     theta: 0.3,
-    dark: 1,
+    dark: 0,
     diffuse: 3,
     mapSamples: 16000,
-    mapBrightness: 3,
-    baseColor: [0.165, 0.122, 0.039],
+    mapBrightness: 1,
+    baseColor: [0, 0, 0],
     markerColor: [255 / 255, 215 / 255, 0 / 255],
-    glowColor: [0.165, 0.122, 0.039],
+    glowColor: [255 / 255, 215 / 255, 0 / 255],
     markers: locations.map(loc => ({
       location: loc.coordinates,
       size: loc.status === 'Headquarters' ? 0.12 : 0.08
@@ -35,7 +35,7 @@ export default function GlobalPresence() {
     <section id="presence" className="relative py-20 bg-gradient-to-br from-[#FFD700]/12 via-black via-[#FFA500]/8 to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#F5E6A3] mb-4">
             Global Presence
           </h2>
           <p className="text-[#D4AF37] text-lg max-w-2xl mx-auto">
@@ -69,7 +69,7 @@ export default function GlobalPresence() {
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold text-lg">{location.name}</h3>
+                      <h3 className="text-[#F5E6A3] font-semibold text-lg">{location.name}</h3>
                       <p className="text-[#D4AF37] text-sm">{location.country}</p>
                     </div>
                   </div>

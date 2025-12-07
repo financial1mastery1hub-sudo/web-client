@@ -8,7 +8,7 @@ export default function VideoShowcase() {
     <section className="relative py-20 bg-gradient-to-br from-[#FFA500]/10 via-black via-[#FFD700]/15 to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#F5E6A3] mb-4">
             See Our Solutions in Action
           </h2>
           <p className="text-[#D4AF37] text-lg max-w-2xl mx-auto">
@@ -37,7 +37,7 @@ export default function VideoShowcase() {
             </div>
 
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">Industrial Solutions</h3>
+              <h3 className="text-2xl font-bold text-[#F5E6A3] mb-2">Industrial Solutions</h3>
               <p className="text-[#D4AF37]">See how our lubricants power heavy machinery and keep operations running smoothly.</p>
             </div>
           </div>
@@ -62,18 +62,18 @@ export default function VideoShowcase() {
             </div>
 
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">Solar Energy</h3>
+              <h3 className="text-2xl font-bold text-[#F5E6A3] mb-2">Solar Energy</h3>
               <p className="text-[#D4AF37]">Discover how our sustainable solar solutions bring clean energy to homes and businesses.</p>
             </div>
           </div>
         </div>
 
         {isPlaying && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-black/90 via-[#FFD700]/10 to-black/90 backdrop-blur-sm">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm">
             <div className="relative w-full max-w-4xl mx-auto px-6">
               <button
                 onClick={() => setIsPlaying(false)}
-                className="absolute -top-12 right-6 text-white text-3xl font-bold hover:text-[#FFD700] transition-colors"
+                className="absolute -top-12 right-6 text-[#F5E6A3] text-3xl font-bold hover:text-[#FFD700] transition-colors"
               >
                 ✕
               </button>

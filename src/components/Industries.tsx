@@ -38,7 +38,7 @@ export default function Industries() {
     <section className="relative py-20 bg-gradient-to-br from-[#FFA500]/8 via-black via-[#FFD700]/12 to-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#F5E6A3] mb-4">
             Industries We Serve
           </h2>
           <p className="text-[#D4AF37] text-lg max-w-2xl mx-auto">
@@ -55,7 +55,7 @@ export default function Industries() {
               <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <industry.icon className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">{industry.title}</h3>
+              <h3 className="text-xl font-bold text-[#F5E6A3] mb-2">{industry.title}</h3>
               <p className="text-[#D4AF37] text-sm">{industry.description}</p>
             </div>
           ))}
