@@ -30,7 +30,6 @@ export default function Header() {
               </button>
               {isSolutionsOpen && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-b from-[#FFD700]/10 via-black to-[#FFA500]/10 border border-[#FFD700]/30 rounded-xl shadow-xl p-4"
                   className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-b from-[#FFD700]/15 via-[#1a1a1a]/95 to-[#FFA500]/15 border border-[#FFD700]/30 rounded-xl shadow-xl p-4"
                   onMouseEnter={() => setIsSolutionsOpen(true)}
                   onMouseLeave={() => setIsSolutionsOpen(false)}
@@ -48,7 +47,6 @@ export default function Header() {
             <a href="#contact" className="text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Contact</a>
           </nav>
 
-          <button className="hidden lg:block px-6 py-2.5 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-[#2A1F0A] rounded-full font-medium hover:shadow-lg hover:shadow-[#FFD700]/50 transition-all">
           <button className="hidden lg:block px-6 py-2.5 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] text-black rounded-full font-medium hover:shadow-lg hover:shadow-[#FFD700]/50 transition-all">
             Request a Quote
           </button>
