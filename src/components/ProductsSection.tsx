@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Car, Factory, Sparkles, Home, Building2, Zap } from 'lucide-react';
 
 export default function ProductsSection() {
@@ -40,19 +41,67 @@ export default function ProductsSection() {
     }
   ];
 
-  return (
-    <section id="solutions" className="relative py-20 bg-gradient-to-br from-black via-[#FFD700]/20 via-black to-[#FFA500]/15">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Products & Solutions
-          </h2>
-          <p className="text-[#D4AF37] text-lg max-w-2xl mx-auto">
-            Comprehensive energy solutions for every need, from automotive to renewable energy.
-          </p>
-        </div>
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.2
+      }
+    }
+  };
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  const cardVariants = {
+    hidden: { opacity: 0, y: 60, rotateX: -15 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      rotateX: 0,
+      transition: {
+        duration: 0.7,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  return (
+    <section id="solutions" className="relative py-20 bg-gradient-to-br from-[#0a0a0a] via-[#FFD700]/15 via-[#1a1a1a] to-[#FFA500]/10">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <motion.h2 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-4xl lg:text-5xl font-bold text-[#F5E6A3] mb-4"
+          >
+            Products & Solutions
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-[#D4AF37] text-lg max-w-2xl mx-auto"
+          >
+            Comprehensive energy solutions for every need, from automotive to renewable energy.
+          </motion.p>
+        </motion.div>
+
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {products.map((product, index) => {
             const images = [
               'https://images.pexels.com/photos/159591/car-maintenance-car-care-tools-159591.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -64,9 +113,11 @@ export default function ProductsSection() {
             ];
 
             return (
-              <div
+              <motion.div
                 key={index}
-               className="group relative bg-gradient-to-br from-[#FFD700]/20 via-black/90 to-[#FFA500]/15 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl overflow-hidden hover:border-[#FFD700]/60 transition-all duration-300"
+                variants={cardVariants}
+                whileHover={{ scale: 1.03, y: -5 }}
+                className="group relative bg-gradient-to-br from-[#FFD700]/15 via-[#1a1a1a]/95 to-[#FFA500]/12 backdrop-blur-sm border border-[#FFD700]/30 rounded-2xl overflow-hidden hover:border-[#FFD700]/60 transition-all duration-300"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
@@ -74,25 +125,25 @@ export default function ProductsSection() {
                     alt={product.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent"></div>
                 </div>
 
                 <div className="p-8">
                   <div className={`relative w-14 h-14 bg-gradient-to-br ${product.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <product.icon className="w-7 h-7 text-white" />
+                    <product.icon className="w-7 h-7 text-black" />
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-2">{product.title}</h3>
+                  <h3 className="text-xl font-bold text-[#F5E6A3] mb-2 group-hover:text-[#FFD700] transition-colors">{product.title}</h3>
                   <p className="text-[#D4AF37] text-sm leading-relaxed mb-4">{product.description}</p>
 
                   <div className="text-[#FFD700] text-sm font-semibold group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">
                     Learn More →
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

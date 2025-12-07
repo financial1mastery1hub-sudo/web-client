@@ -6,7 +6,7 @@ export default function Header() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#FFD700]/20 via-black to-[#FFA500]/20 backdrop-blur-md border-b border-[#FFD700]/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#FFD700]/15 via-[#1a1a1a]/95 to-[#FFA500]/15 backdrop-blur-md border-b border-[#FFD700]/30">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -31,6 +31,7 @@ export default function Header() {
               {isSolutionsOpen && (
                 <div
                   className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-b from-[#FFD700]/10 via-black to-[#FFA500]/10 border border-[#FFD700]/30 rounded-xl shadow-xl p-4"
+                  className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-b from-[#FFD700]/15 via-[#1a1a1a]/95 to-[#FFA500]/15 border border-[#FFD700]/30 rounded-xl shadow-xl p-4"
                   onMouseEnter={() => setIsSolutionsOpen(true)}
                   onMouseLeave={() => setIsSolutionsOpen(false)}
                 >
@@ -48,6 +49,7 @@ export default function Header() {
           </nav>
 
           <button className="hidden lg:block px-6 py-2.5 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-[#2A1F0A] rounded-full font-medium hover:shadow-lg hover:shadow-[#FFD700]/50 transition-all">
+          <button className="hidden lg:block px-6 py-2.5 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] text-black rounded-full font-medium hover:shadow-lg hover:shadow-[#FFD700]/50 transition-all">
             Request a Quote
           </button>
 
@@ -57,14 +59,14 @@ export default function Header() {
         </div>
 
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 space-y-3 bg-gradient-to-b from-[#FFD700]/10 to-black/90 rounded-lg p-4 border border-[#FFD700]/20">
+          <div className="lg:hidden mt-4 pb-4 space-y-3 bg-gradient-to-b from-[#FFD700]/15 via-[#1a1a1a]/95 to-[#FFA500]/10 rounded-lg p-4 border border-[#FFD700]/20">
             <a href="#home" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Home</a>
             <a href="#solutions" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Solutions</a>
             <a href="#presence" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Global Presence</a>
             <a href="#about" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">About</a>
             <a href="#resources" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Resources</a>
             <a href="#contact" className="block text-[#F5E6A3] hover:text-[#FFD700] transition-colors">Contact</a>
-            <button className="w-full px-6 py-2.5 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-black rounded-full font-medium">
+            <button className="w-full px-6 py-2.5 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] text-black rounded-full font-medium">
               Request a Quote
             </button>
           </div>

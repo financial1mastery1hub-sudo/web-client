@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-br from-black via-[#FFD700]/15 via-black to-[#FFA500]/10 border-t border-[#FFD700]/30">
+    <footer className="relative bg-gradient-to-br from-[#0a0a0a] via-[#FFD700]/12 via-[#1a1a1a] to-[#FFA500]/8 border-t border-[#FFD700]/30">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>

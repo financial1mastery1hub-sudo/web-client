@@ -221,14 +221,14 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ name, value, position, icon: 
     >
       <div className="flex items-center gap-3 relative">
         <div className="relative">
-          <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-xl flex items-center justify-center shadow-lg shadow-[#FFD700]/50">
+          <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] via-[#FFA500] to-[#FF8C00] rounded-xl flex items-center justify-center shadow-lg shadow-[#FFD700]/50">
             <Icon className="w-6 h-6 text-white" />
           </div>
           <div className="absolute -inset-1 bg-[#FFD700]/30 rounded-xl blur-sm opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-        <div className="text-white relative backdrop-blur-sm bg-black/50 px-4 py-2 rounded-lg border border-white/10">
-          <div className="font-semibold text-sm group-hover:text-[#FFD700] transition-colors duration-300">{name}</div>
-          <div className="text-gray-300 text-xs group-hover:text-white transition-colors duration-300">{value}</div>
+        <div className="relative backdrop-blur-sm bg-gradient-to-r from-black/80 via-[#1a1a1a]/90 to-black/80 px-4 py-2 rounded-lg border border-[#FFD700]/20">
+          <div className="font-semibold text-sm text-[#F5E6A3] group-hover:text-[#FFD700] transition-colors duration-300">{name}</div>
+          <div className="text-[#D4AF37] text-xs group-hover:text-[#FFD700] transition-colors duration-300">{value}</div>
           <div className="absolute -inset-2 bg-[#FFD700]/10 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
         </div>
       </div>
@@ -281,20 +281,20 @@ const WelcomeSequence: React.FC = () => {
       className="space-y-4 sm:space-y-6"
     >
       <motion.div variants={lineVariants} className="relative">
-        <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+        <p className="text-[#D4AF37] text-sm sm:text-base leading-relaxed">
           For over two decades, <span className="text-[#FFD700] font-semibold">Kashe Energy</span> has been the trusted partner of African industries
         </p>
       </motion.div>
 
       <motion.div variants={lineVariants} className="relative">
-        <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+        <p className="text-[#D4AF37] text-sm sm:text-base leading-relaxed">
           Specializing in <span className="text-[#FFD700] font-semibold">premium lubricants</span>, <span className="text-[#FFA500] font-semibold">automotive care</span>, and <span className="text-[#FFD700] font-semibold">clean energy solutions</span>
         </p>
       </motion.div>
 
       <motion.div variants={lineVariants} className="relative pt-4">
         <div className="flex flex-wrap gap-2 items-center justify-center sm:justify-start">
-          <span className="text-gray-400 text-sm sm:text-base">We deliver</span>
+          <span className="text-[#D4AF37] text-sm sm:text-base">We deliver</span>
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -303,15 +303,15 @@ const WelcomeSequence: React.FC = () => {
           >
             excellence
           </motion.span>
-          <span className="text-gray-400 text-sm sm:text-base">through innovation and sustainability</span>
+          <span className="text-[#D4AF37] text-sm sm:text-base">through innovation and sustainability</span>
         </div>
       </motion.div>
 
       <motion.div
         variants={lineVariants}
-        className="pt-6 border-t border-white/10"
+        className="pt-6 border-t border-[#FFD700]/20"
       >
-        <p className="text-gray-500 text-xs sm:text-sm italic">
+        <p className="text-[#D4AF37]/70 text-xs sm:text-sm italic">
           Engineered for performance. Trusted across Africa and beyond.
         </p>
       </motion.div>
@@ -345,8 +345,33 @@ export const HeroOdyssey: React.FC = () => {
     }
   };
 
+  const titleVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1.2,
+        ease: [0.25, 0.1, 0.25, 1],
+        delay: 0.2
+      }
+    }
+  };
+
+  const subtitleVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        delay: 0.6
+      }
+    }
+  };
   return (
-    <div className="relative w-full bg-gradient-to-br from-[#FFD700]/20 via-black via-[#FFA500]/15 to-black text-white overflow-hidden min-h-screen">
+    <div className="relative w-full bg-gradient-to-br from-[#FFD700]/15 via-[#1a1a1a] via-[#FFA500]/10 to-[#0a0a0a] overflow-hidden min-h-screen">
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 min-h-screen flex flex-col">
         <motion.div
           variants={containerVariants}
@@ -416,17 +441,39 @@ export const HeroOdyssey: React.FC = () => {
             </motion.div>
 
             <motion.h1
-              variants={itemVariants}
+              variants={titleVariants}
               className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight"
             >
-              Kashe Energy
+              <motion.span
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="inline-block text-[#F5E6A3]"
+              >
+                Kashe
+              </motion.span>{" "}
+              <motion.span
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 1 }}
+                className="inline-block bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] bg-clip-text text-transparent"
+              >
+                Energy
+              </motion.span>
             </motion.h1>
 
             <motion.h2
-              variants={itemVariants}
+              variants={subtitleVariants}
               className="text-2xl sm:text-3xl md:text-5xl font-light mb-10 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] bg-clip-text text-transparent"
             >
-              Powering Progress Across Africa
+              <motion.span
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1.2 }}
+                className="inline-block"
+              >
+                Powering Progress Across Africa
+              </motion.span>
             </motion.h2>
 
             <motion.div
@@ -443,7 +490,7 @@ export const HeroOdyssey: React.FC = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group px-8 py-4 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-white rounded-full font-semibold hover:shadow-2xl hover:shadow-[#FFD700]/50 transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
+                className="group px-8 py-4 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] text-black rounded-full font-semibold hover:shadow-2xl hover:shadow-[#FFD700]/50 transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
               >
                 View Products
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -451,7 +498,7 @@ export const HeroOdyssey: React.FC = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 border-2 border-[#FFD700] text-[#FFD700] rounded-full font-semibold hover:bg-[#FFD700] hover:text-white transition-all w-full sm:w-auto"
+                className="px-8 py-4 border-2 border-[#FFD700] text-[#FFD700] rounded-full font-semibold hover:bg-gradient-to-r hover:from-[#FFD700] hover:to-[#FFA500] hover:text-black transition-all w-full sm:w-auto"
               >
                 Explore Solar Solutions
               </motion.button>
@@ -466,9 +513,9 @@ export const HeroOdyssey: React.FC = () => {
         transition={{ duration: 1.5 }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/15 via-black via-[#FFA500]/10 to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/12 via-[#1a1a1a] via-[#FFA500]/8 to-[#0a0a0a]"></div>
 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#FFD700]/25 via-[#FFA500]/15 to-[#FFD700]/10 blur-3xl pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#FFD700]/20 via-[#FFA500]/12 to-[#FF8C00]/8 blur-3xl pointer-events-none"></div>
 
         <div className="absolute top-0 w-full left-1/2 transform -translate-x-1/2 h-full opacity-75">
           <Lightning
